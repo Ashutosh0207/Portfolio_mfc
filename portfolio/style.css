@@ -1,0 +1,496 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* NAVIGATION BAR */
+#logo img{
+    width: 50px;
+    height: 50px;
+    margin: 12px 65px;
+}
+
+#navbar{
+    background-color: rgb(182, 246, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+}
+
+#navbar ul{
+    display: flex;
+    margin: 0px 90px;
+}
+
+#navbar ul li{
+    list-style: none;
+}
+
+#navbar ul li a{
+    color: rgb(0, 0, 0);
+    display: block;
+    padding: 3px 34px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#navbar ul li a:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+#navbar.sticky{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: rgb(182, 246, 255);
+    height: 30px;
+}
+
+#navbar.sticky img{
+    display: none;
+}
+
+#navbar.sticky{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+#navbar.sticky ul li a{
+    font-size: 18px;
+    padding: 0px 34px;
+}
+
+/* INTRO SECTION */
+#intro{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px 12px;
+    padding: 34px 0px;
+
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#my{
+    width: 25rem;
+    position: relative;
+    border: 2px;
+    background: linear-gradient(blue, purple);
+    padding: 2px;
+    position: relative;
+    border-radius: 50px;
+}
+
+/* #my::after{
+    content: '';
+    position: relative;
+    height: 80px;
+    width: 80px;
+    border-bottom: 10px solid blue;
+    border-right: 10px solid blue;
+    right: 20px;
+    bottom: -40px;
+}
+
+#my::before{
+    content: '';
+    position: relative;
+    height: 80px;
+    width: 80px;
+    border-bottom: 10px solid blue;
+    border-right: 10px solid blue;
+    right: -20px;
+    bottom: -40px;
+}  */
+
+/* #intro:before{
+    position: absolute;
+    content: '';
+    height: 50%;
+    width: 0;
+    border: 1px solid black
+} */
+
+
+#aboutMe{
+    width: 40%;
+}
+
+#aboutMe h3{
+    font-size: 20px;
+    font-family: 'Baloo Bhai 2';
+    padding: 0px;
+    margin: 0px;
+    color: rgb(4, 77, 130);
+    line-height: 40px;
+}
+
+#aboutMe h1{
+    font-family: 'Baloo Bhai 2';
+    padding: 0px;
+    margin: 0px;
+    font-size: 45px;
+    color: rgb(2, 19, 114);
+    line-height: 35px;
+} 
+
+#aboutMe p{
+    font-size: 20px;
+    line-height: 30px;
+} 
+
+#cred ul {
+    padding: 0;
+}
+
+#cred ul li{
+    list-style: none;
+}
+
+#cred ul li h3{
+    list-style: none;
+    line-height: 50px;
+}
+
+#intrest h2{
+    font-size: 25px;
+    color: rgb(2, 19, 114);
+    font-family: 'Baloo Bhai 2';
+}
+
+#intrest ul {
+    display: flex;
+    margin: 0px 10px;
+}
+
+#intrest ul li{
+    list-style: none;
+}
+
+#intrest ul li p{
+    margin: 0px 50px;
+}
+
+/* EXPERTISE */
+/* #Texp{
+    text-align: center;
+    font-family: 'Baloo Bhai 2';
+    font-size: 45px;
+    color: rgb(2, 19, 114);
+    line-height: 35px;
+} */
+#e{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 34px 0px;
+    margin-top: 110px;
+}
+
+#Expertise{
+    margin: 30px 54px;
+    padding: 4px;
+    font-size: 20px;
+    font-family: 'Baloo Bhai 2';
+    /* background-color: green; */
+    height: 100vh;
+
+    display: grid;
+    height: 100%;
+    place-items: center;
+}
+
+#e::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background: url('img/snow.jpg') no-repeat center center/cover;
+}
+
+.skills-bar{
+    width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skills-bar .bar{
+    margin: 20px 0px;
+}
+
+.skills-bar .bar:first-child{
+    margin: 0px;
+}
+
+.skills-bar .bar .progress-line{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    box-shadow: inset 0px 1px 1px 1px rgba(0, 0, 0, 0.05),
+                      0px 1px rgba(255, 255, 255, 0.8),
+}
+
+.bar .progress-line.python span{
+    width: 50%;
+}
+.bar .progress-line.html span{
+    width: 80%;
+}
+.bar .progress-line.css span{
+    width: 60%;
+}
+.bar .progress-line.javascript span{
+    width: 50%;
+}
+.bar .progress-line.c span{
+    width: 80%;
+}
+
+.skills-bar .bar .infom{
+    margin-bottom: 5px;
+}
+
+.bar .progress-line span{
+    height: 100%;
+    width: 80%;
+    background: #6665ee;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.bar .progress-line span::before{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -10px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000000;
+}
+
+.bar .progress-line span::after{
+    position: absolute;
+    right: 0;
+    top: -28px;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    background: #000000;
+    padding: 1px 8px;
+    border-radius: 3px;
+}
+
+.bar .progress-line.python span::after{
+    content: "50%";
+}
+.bar .progress-line.html span::after{
+    content: "80%";
+}
+.bar .progress-line.css span::after{
+    content: "60%";
+}
+.bar .progress-line.javascript span::after{
+    content: "50%";
+}
+.bar .progress-line.c span::after{
+    content: "80%";
+}
+
+/* EDUCATION */
+#edu{
+    margin-top: 250px;
+    background-color: rgb(233, 248, 250);
+    padding: 34px;
+}
+#journey{
+    display: flex;
+    justify-content: space-around;
+}
+
+#edu ul {
+    list-style: none;
+}
+.education{
+    width: 50%;
+}
+
+.projects{
+    width: 50%;
+}
+
+#edu .education{
+    position: relative;
+    margin-right: 15px;
+}
+
+#edu .projects{
+    position: relative;
+}
+
+#edu .education ul::before{
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 66%;
+    left: 7px;
+    top: 180px;
+    background-color: rgb(171 171 255);
+}
+
+#edu .projects ul::before{
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 82%;
+    left: 26px;
+    top: 180px;
+    background-color: rgb(171 171 255);
+}
+
+#edu .education .dot{
+    left: -80px;
+    position: relative;
+    top: 55px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: rgb(184, 184, 255);
+}
+
+#edu .projects .dot{
+    left: -61px;
+    position: relative;
+    top: 55px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: rgb(184, 184, 255);
+}
+
+/* FOOTER */
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* CONTACT */
+#contact{
+    margin: 0;
+    padding: 2px 0px;
+}
+
+#contact h1:nth-child(1){
+    color: black;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    z-index: -1;
+    opacity: 0.3;
+    background: url('img/sea.jpg') no-repeat center center/cover;
+}
+
+#contact ul{
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* UTILITIES CLASS */
+.info{
+    color: rgb(0, 0, 0);
+    font-family: 'Baloo Bhai 2';
+    font-size: 20px;
+}
+
+.image{
+    width: 50px;
+}
+
+.image1{
+    width: 20px;
+    margin-right: 15px;
+}
+
+.space{
+    word-spacing: 30px;
+}
+
+.title{
+    text-align: center;
+    font-family: 'Baloo Bhai 2';
+    font-size: 45px;
+    color: rgb(2, 19, 114);
+    line-height: 35px;
+}
+
+.secTitle{
+    text-align: center;
+    font-family: 'Baloo Bhai 2';
+    font-size: 35px;
+    color: rgb(4, 77, 130);
+    line-height: 45px;
+}
+
+.background{
+    width: 600px;
+    background-color: rgb(218, 243, 246);
+    border-radius: 10px;
+    padding: 1px 40px;
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 20%);
+    margin: 15px 0px
+}
+
+.center{
+    text-align: center;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    text-decoration: underline;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    text-decoration: none;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
